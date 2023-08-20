@@ -33,8 +33,13 @@ tar xvf prometheus-2.46.0.linux-amd64.tar.gz
 echo "done"
 
 #execute prometheus
-cd prometheus-2.46.0.linux-amd64/
-./prometheus
+if [ "$run_prom_after_install" == "yes" ]
+then
+   cd prometheus-2.46.0.linux-amd64/
+   ./prometheus
+else
+  echo "prometheus installed but not started"
+fi
 
 
 
