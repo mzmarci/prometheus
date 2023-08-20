@@ -32,3 +32,8 @@ tar xvf prometheus-2.46.0.linux-amd64.tar.gz
 
 echo "done"
 
+#execute prometheus
+./prometheus
+
+
+
